@@ -1,0 +1,12 @@
+@Library('SharedLib') _
+CommonPipelineNew(
+        scmUrl: "git@gitlab.rapidinnovation.tech:root/service-typescript-payment-psbc.git",
+        clusterName: "nonprod-rapidinnovation-eks",
+        gitCred: "git-cred",
+        dockerRegistry: "rapiddevops/service-typescript-payment-psbc",
+        namespace: "psbc-dev",
+        dpName: "psbc-payment-dp", 
+        podName: "psbc-payment-dev",
+        projectName: "psbc"
+        )
+
